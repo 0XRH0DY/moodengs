@@ -55,7 +55,7 @@ export default function MoodengCult() {
               <Image src="/images/moodeng-galaxy.png" alt="Galaxy Moodeng" width={150} height={150} className="rounded-lg mx-auto" />
               <Image src="/images/moodeng-warrior.png" alt="Warrior Moodeng" width={150} height={150} className="rounded-lg mx-auto" />
               <Image src="/images/moodeng-astronaut.png" alt="Space Moodeng" width={150} height={150} className="rounded-lg mx-auto" />
-              <Image src="/images/2103png" alt="Hero Moodeng" width={150} height={150} className="rounded-lg mx-auto" />
+              <Image src="/images/2103.png" alt="Hero Moodeng" width={150} height={150} className="rounded-lg mx-auto" />
               <Image src="/images/2104.png" alt="Hero Moodeng" width={150} height={150} className="rounded-lg mx-auto" />
               <Image src="/images/2105.png" alt="Hero Moodeng" width={150} height={150} className="rounded-lg mx-auto" />
               <Image src="/images/2106.png" alt="Hero Moodeng" width={150} height={150} className="rounded-lg mx-auto" />
