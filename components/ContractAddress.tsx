@@ -1,7 +1,7 @@
 "use client";
 
 export default function ContractAddress() {
-  const ca = "TBA"; // replace with your CA
+  const ca = "So1aNaCa1234567890..."; // Replace with your actual CA
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(ca);
@@ -10,11 +10,12 @@ export default function ContractAddress() {
 
   return (
     <div className="mt-2 text-sm text-gray-300">
-      Contract Address:{" "}
-      <span className="font-mono">{ca}</span>
+      <p>
+        Contract Address: <span className="font-mono">{ca}</span>
+      </p>
       <button
         onClick={copyToClipboard}
-        className="ml-2 px-2 py-1 text-xs bg-blue-600 text-white rounded hover:bg-blue-700"
+        className="mt-1 px-3 py-1 bg-blue-600 text-white text-xs rounded hover:bg-blue-700"
       >
         Copy
       </button>
