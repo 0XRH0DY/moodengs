@@ -86,6 +86,34 @@ export default function Home() {
                 height={150}
                 className="rounded-lg mx-auto"
               />
+              <Image
+                src="/images/2103png"
+                alt="Hero Moodeng"
+                width={150}
+                height={150}
+                className="rounded-lg mx-auto"
+              />
+              <Image
+                src="/images/2104.png"
+                alt="Hero Moodeng"
+                width={150}
+                height={150}
+                className="rounded-lg mx-auto"
+              />
+              <Image
+                src="/images/2105.png"
+                alt="Hero Moodeng"
+                width={150}
+                height={150}
+                className="rounded-lg mx-auto"
+              />
+              <Image
+                src="/images/2106.png"
+                alt="Hero Moodeng"
+                width={150}
+                height={150}
+                className="rounded-lg mx-auto"
+              />
             </div>
           </div>
         </div>
