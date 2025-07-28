@@ -23,6 +23,10 @@ export default function MoodengCult() {
             <span className="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">NFT CULT</span>
           </h1>
           <p className="mt-2 text-sm text-gray-300">
+  Contract Address: <span className="font-mono">So1aNaCa1234567890...</span>
+</p>
+
+          <p className="mt-2 text-sm text-gray-300">
   Contract Address:{" "}
   <span id="ca" className="font-mono">TBA</span>
   <button
