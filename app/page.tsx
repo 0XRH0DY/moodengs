@@ -23,6 +23,18 @@ export default function MoodengCult() {
             <span className="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">NFT CULT</span>
           </h1>
 
+import ContractAddress from "@/components/ContractAddress";
+
+export default function Home() {
+  return (
+    <main className="p-6">
+      <h1 className="text-4xl font-bold">Moodeng PFP Cult</h1>
+      <ContractAddress />
+    </main>
+  );
+}
+
+          
           <p className="text-xl md:text-2xl text-white/80 mb-12 max-w-3xl mx-auto">
             5,000 quirky, personality-packed hippos on Solana within the BONK ecosystem! 🦛✨
           </p>
