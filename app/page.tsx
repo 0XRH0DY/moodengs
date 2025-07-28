@@ -96,7 +96,7 @@ export default function MoodengCult() {
               </a>
             </Button>
             <Button size="lg" className="bg-[#1DA1F2] hover:bg-[#0d8bd9] text-lg px-8 py-4" asChild>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://x.com/i/communities/1949796477292658973/" target="_blank" rel="noopener noreferrer">
                 <Twitter className="mr-2" />
                 Join Twitter Community
               </a>
