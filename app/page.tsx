@@ -1,6 +1,7 @@
-import { Button } from "@/components/ui/button"
-import { Twitter, ExternalLink } from "lucide-react"
-import Image from "next/image"
+import { Button } from "@/components/ui/button";
+import { Twitter, ExternalLink } from "lucide-react";
+import Image from "next/image";
+import ContractAddress from "@/components/ContractAddress"; // ✅ Contract address component
 
 export default function MoodengCult() {
   return (
@@ -17,27 +18,19 @@ export default function MoodengCult() {
               className="mx-auto rounded-full mb-6"
             />
           </div>
-          <h1 className="text-6xl md:text-8xl font-black text-white mb-6 leading-tight">
+          <h1 className="text-6xl md:text-8xl font-black text-white mb-2 leading-tight">
             MOODENG
             <br />
-            <span className="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">NFT CULT</span>
+            <span className="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+              NFT CULT
+            </span>
           </h1>
 
-import ContractAddress from "@/components/ContractAddress";
-
-export default function Home() {
-  return (
-    <main className="p-6">
-      <h1 className="text-4xl font-bold">Moodeng PFP Cult</h1>
-      <ContractAddress />
-    </main>
-  );
-}
-
-          
-          <p className="text-xl md:text-2xl text-white/80 mb-12 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto mt-4">
             5,000 quirky, personality-packed hippos on Solana within the BONK ecosystem! 🦛✨
           </p>
+
+          <ContractAddress /> {/* ✅ Add this below the hippo sentence */}
         </div>
       </section>
 
@@ -58,62 +51,14 @@ export default function Home() {
               most wholesome cult in crypto and become part of our growing community of Moodeng enthusiasts!
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-              <Image
-                src="/images/moodeng-hero.png"
-                alt="Hero Moodeng"
-                width={150}
-                height={150}
-                className="rounded-lg mx-auto"
-              />
-              <Image
-                src="/images/moodeng-galaxy.png"
-                alt="Galaxy Moodeng"
-                width={150}
-                height={150}
-                className="rounded-lg mx-auto"
-              />
-              <Image
-                src="/images/moodeng-warrior.png"
-                alt="Warrior Moodeng"
-                width={150}
-                height={150}
-                className="rounded-lg mx-auto"
-              />
-              <Image
-                src="/images/moodeng-astronaut.png"
-                alt="Space Moodeng"
-                width={150}
-                height={150}
-                className="rounded-lg mx-auto"
-              />
-              <Image
-                src="/images/2103png"
-                alt="Hero Moodeng"
-                width={150}
-                height={150}
-                className="rounded-lg mx-auto"
-              />
-              <Image
-                src="/images/2104.png"
-                alt="Hero Moodeng"
-                width={150}
-                height={150}
-                className="rounded-lg mx-auto"
-              />
-              <Image
-                src="/images/2105.png"
-                alt="Hero Moodeng"
-                width={150}
-                height={150}
-                className="rounded-lg mx-auto"
-              />
-              <Image
-                src="/images/2106.png"
-                alt="Hero Moodeng"
-                width={150}
-                height={150}
-                className="rounded-lg mx-auto"
-              />
+              <Image src="/images/moodeng-hero.png" alt="Hero Moodeng" width={150} height={150} className="rounded-lg mx-auto" />
+              <Image src="/images/moodeng-galaxy.png" alt="Galaxy Moodeng" width={150} height={150} className="rounded-lg mx-auto" />
+              <Image src="/images/moodeng-warrior.png" alt="Warrior Moodeng" width={150} height={150} className="rounded-lg mx-auto" />
+              <Image src="/images/moodeng-astronaut.png" alt="Space Moodeng" width={150} height={150} className="rounded-lg mx-auto" />
+              <Image src="/images/2103png" alt="Hero Moodeng" width={150} height={150} className="rounded-lg mx-auto" />
+              <Image src="/images/2104.png" alt="Hero Moodeng" width={150} height={150} className="rounded-lg mx-auto" />
+              <Image src="/images/2105.png" alt="Hero Moodeng" width={150} height={150} className="rounded-lg mx-auto" />
+              <Image src="/images/2106.png" alt="Hero Moodeng" width={150} height={150} className="rounded-lg mx-auto" />
             </div>
           </div>
         </div>
@@ -157,5 +102,5 @@ export default function Home() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
