@@ -1,11 +1,15 @@
 "use client";
 
+import { useState } from "react";
+
 export default function ContractAddress() {
-  const ca = "So1aNaCa1234567890..."; // ← Replace with your actual CA
+  const ca = "So1aNaCa1234567890..."; // 🔁 Replace this with your real CA
+  const [copied, setCopied] = useState(false);
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(ca);
-    alert("Copied to clipboard!");
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000); // optional: remove "Copied!" feedback after 2s
   };
 
   return (
