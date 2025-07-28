@@ -22,13 +22,9 @@ export default function MoodengCult() {
             <br />
             <span className="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">NFT CULT</span>
           </h1>
-          <p className="mt-2 text-sm text-gray-300">
-  Contract Address: <span className="font-mono">So1aNaCa1234567890...</span>
-</p>
-
-          <p className="mt-2 text-sm text-gray-300">
+         <p className="mt-2 text-sm text-gray-300">
   Contract Address:{" "}
-  <span id="ca" className="font-mono">TBA</span>
+  <span id="ca" className="font-mono">So1aNaCa1234567890...</span>
   <button
     onClick={() => {
       const ca = document.getElementById("ca")?.textContent || "";
@@ -40,6 +36,7 @@ export default function MoodengCult() {
     Copy
   </button>
 </p>
+
 
           <p className="text-xl md:text-2xl text-white/80 mb-12 max-w-3xl mx-auto">
             5,000 quirky, personality-packed hippos on Solana within the BONK ecosystem! 🦛✨
