@@ -90,7 +90,7 @@ export default function MoodengCult() {
               className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-lg px-8 py-4"
               asChild
             >
-              <a href="https://launchmynft.io" target="_blank" rel="noopener noreferrer">
+              <a href="https://launchmynft.io/sol/10260" target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="mr-2" />
                 Launch on LaunchMyNFT.io
               </a>
