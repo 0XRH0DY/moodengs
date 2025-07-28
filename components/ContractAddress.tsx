@@ -1,7 +1,7 @@
 "use client";
 
 export default function ContractAddress() {
-  const ca = "So1aNaCa1234567890..."; // replace with your CA
+  const ca = "TBA"; // replace with your CA
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(ca);
