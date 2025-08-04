@@ -27,7 +27,7 @@ export default function MoodengCult() {
           </h1>
 
           <p className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto mt-4">
-            5,000 quirky, personality-packed hippos on Solana within the BONK ecosystem! 🦛✨
+            2,222 quirky, personality-packed hippos on Solana within the BONK ecosystem! 🦛✨
           </p>
 
           <ContractAddress /> {/* ✅ Add this below the hippo sentence */}
