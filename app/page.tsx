@@ -42,7 +42,7 @@ export default function MoodengCult() {
           </h2>
           <div className="text-center">
             <p className="text-lg md:text-xl text-white/80 mb-8 leading-relaxed">
-              Welcome to the Moodeng NFT Cult - a collection of 5,000 unique, pixel-perfect hippos living on the Solana
+              Welcome to the Moodeng NFT Cult - a collection of 2,222 unique, pixel-perfect hippos living on the Solana
               blockchain. Built within the BONK ecosystem, each Moodeng represents the rebellious spirit of meme culture
               meets serious NFT utility.
             </p>
