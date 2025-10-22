@@ -1,1 +1,10 @@
+import PFPGenerator from "@/components/pfp-generator"
+
+export default function GeneratorPage() {
+  return (
+    <main className="min-h-screen bg-background">
+      <PFPGenerator />
+    </main>
+  )
+}
 
