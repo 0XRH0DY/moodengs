@@ -1,106 +1,91 @@
-import { Button } from "@/components/ui/button";
-import { Twitter, ExternalLink } from "lucide-react";
-import Image from "next/image";
-import ContractAddress from "@/components/ContractAddress"; // ✅ Contract address component
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
-export default function MoodengCult() {
+export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-pink-800 to-orange-600">
+    <main className="min-h-screen bg-gradient-to-br from-purple-600 via-purple-700 to-orange-600">
       {/* Hero Section */}
-      <section className="pt-16 pb-16 px-4">
-        <div className="container mx-auto text-center">
-          <div className="mb-8">
-            <Image
-              src="/images/moodeng-basic.gif"
-              alt="Moodeng"
-              width={200}
-              height={200}
-              className="mx-auto rounded-full mb-6"
-            />
-          </div>
-          <h1 className="text-6xl md:text-8xl font-black text-white mb-2 leading-tight">
-            MOODENG
-            <br />
-            <span className="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
-              NFT CULT
-            </span>
-          </h1>
-
-          <p className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto mt-4">
-            2,222 quirky, personality-packed hippos on Solana within the BONK ecosystem! 🦛✨
-          </p>
-
-          <ContractAddress /> {/* ✅ Add this below the hippo sentence */}
+      <section className="flex flex-col items-center justify-center px-6 py-20 text-center">
+        <div className="mb-8 h-48 w-48 rounded-full bg-gray-900 flex items-center justify-center">
+          <div className="text-6xl">🎨</div>
         </div>
+
+        <h1 className="mb-4 text-6xl font-black text-white md:text-7xl">YOUR PROJECT</h1>
+        <h2 className="mb-6 text-5xl font-black text-pink-300 md:text-6xl">NFT CULT</h2>
+
+        <p className="mb-4 max-w-2xl text-lg text-white/90 leading-relaxed">
+          Create your unique profile picture from thousands of quirky combinations!
+        </p>
+
+        <div className="mb-8 rounded-lg bg-white/10 px-6 py-3 backdrop-blur-sm">
+          <p className="text-sm text-white/80">Contract Address: Coming Soon...</p>
+        </div>
+
+        <Link href="/generator">
+          <Button
+            size="lg"
+            className="bg-pink-500 hover:bg-pink-600 text-white font-bold px-8 py-6 text-lg rounded-full"
+          >
+            Create Your PFP
+          </Button>
+        </Link>
       </section>
 
       {/* About Section */}
-      <section className="py-16 px-4 bg-black/20">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="text-4xl md:text-6xl font-bold text-center text-white mb-12">
-            About the <span className="text-pink-400">Cult</span>
-          </h2>
-          <div className="text-center">
-            <p className="text-lg md:text-xl text-white/80 mb-8 leading-relaxed">
-              Welcome to the Moodeng NFT Cult - a collection of 2,222 unique, pixel-perfect hippos living on the Solana
-              blockchain. Built within the BONK ecosystem, each Moodeng represents the rebellious spirit of meme culture
-              meets serious NFT utility.
-            </p>
-            <p className="text-lg md:text-xl text-white/80 mb-8 leading-relaxed">
-              Our adorable hippos come with over 200 unique traits, from tactical gear to cosmic accessories. Join the
-              most wholesome cult in crypto and become part of our growing community of Moodeng enthusiasts!
-            </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-              <Image src="/images/moodeng-hero.png" alt="Hero Moodeng" width={150} height={150} className="rounded-lg mx-auto" />
-              <Image src="/images/moodeng-galaxy.png" alt="Galaxy Moodeng" width={150} height={150} className="rounded-lg mx-auto" />
-              <Image src="/images/moodeng-warrior.png" alt="Warrior Moodeng" width={150} height={150} className="rounded-lg mx-auto" />
-              <Image src="/images/moodeng-astronaut.png" alt="Space Moodeng" width={150} height={150} className="rounded-lg mx-auto" />
-              <Image src="/images/2103.png" alt="Hero Moodeng" width={150} height={150} className="rounded-lg mx-auto" />
-              <Image src="/images/2104.png" alt="Hero Moodeng" width={150} height={150} className="rounded-lg mx-auto" />
-              <Image src="/images/2105.png" alt="Hero Moodeng" width={150} height={150} className="rounded-lg mx-auto" />
-              <Image src="/images/2106.png" alt="Hero Moodeng" width={150} height={150} className="rounded-lg mx-auto" />
+      <section className="px-6 py-20">
+        <h2 className="mb-12 text-center text-5xl font-black text-white">
+          About the <span className="text-pink-300">Cult</span>
+        </h2>
+
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="mb-6 text-lg text-white/90 leading-relaxed">
+            Welcome to the ultimate PFP generator - a collection of unique, personality-packed characters ready to
+            represent you across the digital realm. Built with creativity and passion, each combination represents the
+            rebellious spirit of meme culture meets serious utility.
+          </p>
+
+          <p className="mb-12 text-lg text-white/90 leading-relaxed">
+            Our adorable characters come with countless unique traits, from tactical gear to cosmic accessories. Join
+            the most wholesome cult in crypto and become part of our growing community!
+          </p>
+        </div>
+
+        {/* Sample Characters Grid */}
+        <div className="mx-auto grid max-w-4xl grid-cols-2 gap-4 md:grid-cols-4">
+          {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
+            <div key={i} className="aspect-square rounded-2xl bg-gradient-to-br from-blue-400 to-purple-400 p-1">
+              <div className="h-full w-full rounded-xl bg-gray-800/50 backdrop-blur-sm flex items-center justify-center text-4xl">
+                🎭
+              </div>
             </div>
-          </div>
+          ))}
         </div>
       </section>
 
-      {/* Links Section */}
-      <section className="py-16 px-4">
-        <div className="container mx-auto text-center">
-          <h2 className="text-4xl md:text-6xl font-bold text-white mb-12">
-            Join the <span className="text-purple-400">Movement</span>
-          </h2>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center max-w-2xl mx-auto">
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-lg px-8 py-4"
-              asChild
-            >
-              <a href="https://launchmynft.io/sol/10260" target="_blank" rel="noopener noreferrer">
-                <ExternalLink className="mr-2" />
-                Launch on LaunchMyNFT.io
-              </a>
-            </Button>
-            <Button size="lg" className="bg-[#1DA1F2] hover:bg-[#0d8bd9] text-lg px-8 py-4" asChild>
-              <a href="https://x.com/i/communities/1949796477292658973/" target="_blank" rel="noopener noreferrer">
-                <Twitter className="mr-2" />
-                Join Twitter Community
-              </a>
-            </Button>
-          </div>
+      {/* CTA Section */}
+      <section className="px-6 py-20 text-center">
+        <h2 className="mb-12 text-5xl font-black text-white">
+          Join the <span className="text-pink-300">Movement</span>
+        </h2>
+
+        <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <Button size="lg" className="bg-pink-500 hover:bg-pink-600 text-white font-bold px-8 rounded-full">
+            Launch on Platform
+          </Button>
+          <Button
+            size="lg"
+            variant="outline"
+            className="border-2 border-cyan-400 bg-cyan-500 hover:bg-cyan-600 text-white font-bold px-8 rounded-full"
+          >
+            Join Twitter Community
+          </Button>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-4 bg-black/40 border-t border-white/10">
-        <div className="container mx-auto text-center">
-          <div className="flex items-center justify-center space-x-2 mb-4">
-            <Image src="/images/moodeng-basic.gif" alt="Moodeng" width={32} height={32} className="rounded-full" />
-            <span className="text-xl font-bold text-white">MOODENG CULT</span>
-          </div>
-          <p className="text-white/60">Built on Solana • Powered by BONK • Made with 💜</p>
-        </div>
+      <footer className="border-t border-white/10 px-6 py-8 text-center">
+        <p className="text-sm text-white/60">Built with passion • Powered by creativity • Made with ❤️</p>
       </footer>
-    </div>
-  );
+    </main>
+  )
 }
